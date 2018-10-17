@@ -1,0 +1,55 @@
+netBeans/*
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+
+# QT Temporary Files
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+
+# QT Project Specific Files
+*.pro.user*
+
+#Binary files
+#engine
+#gui
+#infogui
+
+#Makefiles
+dev/engine/Makefile
+gui/gui/Makefile
+/.vs
+/packages
+/SubReformatter/Properties/PublishProfiles

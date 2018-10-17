@@ -1,0 +1,39 @@
+System.UnauthorizedAccessException: Access to the path 'C:\inetpub\wwwroot\msmq' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at AutoBackupFolder.ZipHelper.CompressFolder(String path, ZipOutputStream zipStream, Int32 folderOffset) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 89
+   at AutoBackupFolder.ZipHelper.CompressFolder(String path, ZipOutputStream zipStream, Int32 folderOffset) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 126
+   at AutoBackupFolder.ZipHelper.CreateBackup(String outPathname, String folderName, String password) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 78
+   at AutoBackupFolder.Program.Main(String[] args) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 37
+System.UnauthorizedAccessException: Access to the path 'C:\inetpub\wwwroot\backup-17102018100954' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at AutoBackupFolder.ZipHelper.CreateBackup(String outPathname, String folderName, String password) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 69
+   at AutoBackupFolder.Program.Main(String[] args) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 39
+System.UnauthorizedAccessException: Access to the path 'C:\inetpub\wwwroot\backup-17102018101049' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at AutoBackupFolder.ZipHelper.CreateBackup(String outPathname, String folderName, String password) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 69
+   at AutoBackupFolder.Program.Main(String[] args) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 39
+System.UnauthorizedAccessException: Access to the path 'C:\inetpub\wwwroot\backup-17102018101258' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at AutoBackupFolder.ZipHelper.CreateBackup(String outPathname, String folderName, String password) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 71
+   at AutoBackupFolder.Program.Main(String[] args) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 39
+System.UnauthorizedAccessException: Access to the path 'C:\inetpub\wwwroot\msmq' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at AutoBackupFolder.ZipHelper.CompressFolder(String path, ZipOutputStream zipStream, Int32 folderOffset) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 102
+   at AutoBackupFolder.ZipHelper.CompressFolder(String path, ZipOutputStream zipStream, Int32 folderOffset) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 139
+   at AutoBackupFolder.ZipHelper.CreateBackup(String outPathname, String folderName, String backupFileName, String password) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 91
+   at AutoBackupFolder.Program.Main(String[] args) in C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\Program.cs:line 57

@@ -1,0 +1,12 @@
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\bin\Debug\AutoBackupFolder.exe.config
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\bin\Debug\AutoBackupFolder.exe
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\bin\Debug\AutoBackupFolder.pdb
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\obj\Debug\AutoBackupFolder.csprojAssemblyReference.cache
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\obj\Debug\AutoBackupFolder.csproj.CoreCompileInputs.cache
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\obj\Debug\AutoBackupFolder.csproj.CopyComplete
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\obj\Debug\AutoBackupFolder.exe
+C:\Users\tughan.belbek\source\repos\AutoBackupFolder\AutoBackupFolder\obj\Debug\AutoBackupFolder.pdb
