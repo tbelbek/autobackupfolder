@@ -24,6 +24,7 @@ namespace AutoBackupFolder
             {
                 string readText = File.ReadAllText("settings.json");
                 backupSettings = JsonConvert.DeserializeObject<BackupSettings>(readText);
+                Console.WriteLine("Ayarlar bulundu. Yedekleme yapılıyor.");
             }
             else
             {
@@ -50,11 +51,27 @@ namespace AutoBackupFolder
                     tw.WriteLine(JsonConvert.SerializeObject(backupSettings));
                 }
 
+                var size = GetDirectorySize($"{backupSettings.TargetPath}\\{backupSettings.BackupName}");
+
+                if (size > 1000000000)
+                {
+                    string[] files = Directory.GetFiles($"{backupSettings.TargetPath}\\{backupSettings.BackupName}");
+
+                    foreach (string file in files)
+                    {
+                        FileInfo fi = new FileInfo(file);
+                        if (fi.CreationTime < DateTime.Now.AddDays(-15) && fi.CreationTime.DayOfWeek != DayOfWeek.Monday)
+                            fi.Delete();
+                    }
+                }
+
                 zipHelper.CreateBackup(backupSettings.TargetPath, backupSettings.SourcePath, backupSettings.BackupName, backupSettings.Password);
+
                 using (var tw = new StreamWriter("process.log", true))
                 {
                     tw.WriteLine($"Backup completed @ {DateTime.Now}");
                 }
+
             }
             catch (Exception ex)
             {
@@ -65,6 +82,26 @@ namespace AutoBackupFolder
                     Console.ReadKey();
                 }
             }
+        }
+        static long GetDirectorySize(string p)
+        {
+            // 1.
+            // Get array of all file names.
+            string[] a = Directory.GetFiles(p, "*.*");
+
+            // 2.
+            // Calculate total bytes of all files in a loop.
+            long b = 0;
+            foreach (string name in a)
+            {
+                // 3.
+                // Use FileInfo to get length of each file.
+                FileInfo info = new FileInfo(name);
+                b += info.Length;
+            }
+            // 4.
+            // Return total size
+            return b;
         }
     }
 
